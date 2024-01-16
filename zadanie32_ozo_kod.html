@@ -1,0 +1,79 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_Ożóg()
+ {
+ window.close()
+ }
+21
+ </script>
+</head>
+<body>
+ <form>
+ <textarea name="Ożóg" cols="90" rows="30" disabled>
+ 
+ <html>
+<head>
+<title> Ożóg 3F</title>
+<script type="text/javascript">
+function Monitor(rozdzielczosc_m, czas_m, rozmiar_m) {
+    this.rozdzielczosc = rozdzielczosc_m;
+    this.czas = czas_m;
+    this.rozmiar = rozmiar_m;
+    this.marka = ''; 
+}
+
+Monitor.prototype.wyswietlOzog = function () {
+    document.write(this.rozdzielczosc + ' ' + this.czas + '<br>');
+};
+
+Monitor.prototype.wypisz = function () {
+    alert('Marka: ' + this.marka);
+};
+
+function Klient(nazwisko_k, imie_k, zawod_k) {
+    this.nazwisko = nazwisko_k;
+    this.imie = imie_k;
+    this.zawod = zawod_k;
+}
+
+Klient.prototype.wypisz = function () {
+    alert(this.nazwisko + ' ' + this.imie + ' ' + this.zawod);
+};
+
+Klient.prototype.pokazNazwiskoUcznia = function () {
+    alert('Nazwisko ucznia: ' + this.nazwisko);
+};
+
+var monitor1 = new Monitor('1920x1800', '4ms', '24cal');
+monitor1.wyswietlOzog();
+monitor1.marka = 'asus';
+monitor1.wypisz();
+
+var monitor2 = new Monitor('2560x1440', '1ms', '27cal');
+monitor2.wyswietlOzog();
+monitor2.marka = 'dell';
+monitor2.wypisz();
+
+var klient1 = new Klient('ozog', 'wiktor', 'informatyk');
+klient1.wypisz();
+klient1.pokazNazwiskoUcznia();
+
+var klient2 = new Klient('janusz', 'kowalski', 'kierowca');
+klient2.wypisz();
+klient2.pokazNazwiskoUcznia();
+</script>
+</head>
+<body>
+<br>
+Programowanie obiektowe
+</body>
+</html>
+ 
+ </textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Ożóg()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>
