@@ -1,0 +1,137 @@
+<html>
+ <head>
+ <title> Ożóg 3F</title>
+ 
+ 
+ 
+ <script language="JavaScript">
+ 
+ function okno_zamknij()
+ {
+ window.close()
+ }
+ 
+ 
+ 
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp;W jaki sposób można określić właściwość danego obiektu ( dwa sposoby wraz z przykładami)? (odpowiedź poniżej) ?:".fontcolor("black").fontsize(7).bold()+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; <b>Sposób1</b>".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; <b>Używając zapisu postaci:</b>".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; a)".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; <b>nazwa_obiektu.nazwa_właściwości='tekst' </b> dla właściwości typu tekstowego <br> np".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; auto.marka='Opel Omega';<br> b)".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; <b>nazwa_obiektu.nazwa_właściwości=liczba;</b>  dla właściwości typu liczbowego<br> np.".fontcolor('black').fontsize(5)+"<br>");
+ 
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; <b> Sposób 2</b>".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; używając zapisu postaci: <br> <b>nazwa_obiektu[nazwa_właściwości];</b> <br> np. auto[cena]=25000;".fontcolor("black").fontsize(5)+"<br>");
+ 
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; <br><br><br><br>".fontcolor("black").fontsize(5)+"<br>");
+ 
+ 
+ 
+ 
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; 2. W jaki sposób można odwołać się do pól (właściwości) i metod? (odpowiedź poniżej)".fontcolor("black").fontsize(7).bold()+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; Do<u> właściwości i metod</u> można się odwołać podobnie jak do zwykłych zmiennych ".fontcolor("black").bold().fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; i funkcji, trzeba tylko przed ich nazwą umieścić nazwę obiektu, którego są elementami  " .fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp;(np. zmienną, która przechowuje dany obiekt), i <u>kropkę.</u> " .fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; np. console.log(samochod1.kolor);  wyświetla kolor obiektu samochod " .fontcolor("black").fontsize(5)+"<br>");
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; 3. Wymień cechy charakterystyczne konstruktora. (odpowiedź poniżej):".fontcolor("black").fontsize(7).bold()+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; -jest wywoływany (uruchamiany) automatycznie w chwili tworzenia obiektu danej klasy - na rzecz tego obiektu,".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; -nazywa się tak samo jak klasa,".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; -nie zwraca żadnej wartości ,".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; -może przyjmować argumenty - tak jak zwykła funkcja czy metoda, aby następnie powołać do życia obiekt za pomocą operatora <b>new</b>".fontcolor("black").fontsize(5)+"<br>");
+ 
+ 
+ 
+ 
+ 
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp;4. Konstruowanie obiektu na podstawie przykładu obiekt ma trzy pola oraz jedną metodę.:".fontcolor("black").fontsize(7).bold()+"<br>");
+ document.write(" var osoba_1 = <br> { <br> nazwisko : ‘Kowalski’, <br> imie :’Jan’, <br> zawod :’piekarz’, <br> wyświetl :function () { <br> Document.write(this.nazwisko + ‘ ‘ + this.imie)<br> }<br> }<br> uwagi1<br> Słowo kluczowe this  pozwala odwołać się do pola lub metody obiektu z wnętrza tego obiektu <br> uwaga2<br> Metody i pola muszą być odzielne przecinkami w obrębie jednego obiektu.  ".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp;otaczający nas świat to różnego rodzaju przedmioty. Tworząc program komputerowy dokonujemy".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp;pewnego ich odwzorowania rzeczywistości np. definiujemy obiekt samochód. Definiujemy pola ".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp;czyli jego stan np. rok produkcji, marka, kolor. Definiujemy również metody czyli co umie np. ".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp;hamowanie, przyśpieszanie. Definicja obiektu jego metod i pól znajduje się w klasie. Następnie na".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp;podstawie zdefiniowanego obiektu (może mieć pola oraz metody) powołujemy obiekt w pamięci ".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp;wirtualnej".fontcolor("black").fontsize(5)+"<br><br><br>");
+ 
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp;-Programowanie obiektowe pozwala na lepsze gospodarowanie pamięciom komputera, ponieważ".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp;gdy obiekt staje się zbędny możemy go usunąć co zwolni pamięć zajmowaną przez ten obiekt. W".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp;programowaniu strukturalnym aby zwalniać pamięć konieczne było stosowanie dynamicznych".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp;struktur danych np. stos czy kolejka. ".fontcolor("black").fontsize(5)+"<br><br><br>");
+ 
+ 
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp;W programowaniu obiektowym dobrze napisana i przetestowana klasa pozwala na stosowaniu ".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp;przez innych programistów. Zaoszczędza to czas i środki pieniężne. ".fontcolor("black").fontsize(5)+"<br>");
+ 
+ 
+ 
+ 
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp;5. Znaczenie słowa this. Jak oddzielamy pola oraz metody? (odpowiedź poniżej)".fontcolor("black").fontsize(7).bold()+"<br>");
+ 
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; -Użyte słowo kluczowe this odnosi się do aktualnego obiektu i pozwala na przypisanie wartości parametru do odpowiedniego pola tego obiektu.".fontcolor("black").fontsize(5)+"<br>");
+ 
+ 
+ 
+ 
+ 
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp;6. Konstruktor w JS na podstawie przykładu wraz z opisem.".fontcolor("black").fontsize(7).bold()+"<br>");
+ 
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; Zostanie utworzony konstruktor o nazwie klient z właściwościami nazwisko, imie, zawod oraz ".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; metodą <b>wypisz()</b>. Właściwościom obiektu zostały przypisane wartości parametrów. Użyte słowo ".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; kluczowe this odnosi się do aktualnego obiektu i pozwala na przypisanie wartości parametru do ".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; odpowiedniego pola tego obiektu.".fontcolor("black").fontsize(5)+"<br><br><br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; function klient(nazwisko_k,imie_k,zawod_k)".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; {.".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; this.nazwisko=nazwisko_k;".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; this.imie=imie_k;".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; this.zawod=zawod_k;".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; wypisz = function ()".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp; { <br>alert(this.nazwisko + ' ' + this.imie) <br>} <br> }".fontcolor("black").fontsize(5)+"<br>");
+ 
+ 
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp;7. Znaczenie słowa kluczowego <b>New</b> wraz z przykładem.".fontcolor("black").fontsize(7).bold()+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp;Do utworzenia <u><b>nowego obiektu</b></u> na podstawie konstruktora stosowane jest <b>słowo kluczowe new</B>.".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp;Przykład.".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp;var osoba1 = new klient('Kowalski', 'Jan', 'kierowca');".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp;var osoba2 = new klient('Nowak', 'Anna', 'sekretarka');".fontcolor("black").fontsize(5)+"<br>");
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp;Powstały dwa nowe obiekty osoba1 i osoba2 należące do klasy klient.".fontcolor("black").fontsize(5)+"<br>");
+ 
+ 
+ 
+ 
+ document.write(" &nbsp;&nbsp;&nbsp;&nbsp;8. Znaczenie słowa kluczowego prototype wraz z przykładem i opisem ( szczególnie ważny tekst pogrubiony).".fontcolor("black").fontsize(7).bold()+"<br>");
+  document.write(" &nbsp;&nbsp;&nbsp;&nbsp; Do definowania metod i właściwości dla obiektu jest wykorzystana właściwości <b>prototype</B>.".fontcolor("black").fontsize(5)+"<br>");
+  document.write(" &nbsp;&nbsp;&nbsp;&nbsp; <u>Przykład</U>".fontcolor("black").fontsize(5)+"<br>");
+  document.write(" &nbsp;&nbsp;&nbsp;&nbsp;function klient()".fontcolor("black").fontsize(5)+"<br>");
+  document.write(" &nbsp;&nbsp;&nbsp;&nbsp;{ <br>this.nazwisko='Bielski';<br>this.imie='Paweł';<br.}".fontcolor("black").fontsize(5)+"<br>");
+  document.write(" &nbsp;&nbsp;&nbsp;&nbsp;klient.prototype.pisz_dane = function ()".fontcolor("black").fontsize(5)+"<br>");
+  document.write(" &nbsp;&nbsp;&nbsp;&nbsp;{<br>document.write(this.nazwisko + ' ' + this.imie)<br>}".fontcolor("black").fontsize(5)+"<br>");
+  document.write(" &nbsp;&nbsp;&nbsp;&nbsp;klient.prototype.zawod = 'kierowca';".fontcolor("black").fontsize(5)+"<br>");
+  document.write(" &nbsp;&nbsp;&nbsp;&nbsp;var osoba1 = new klient();".fontcolor("black").fontsize(5)+"<br>");
+  document.write(" &nbsp;&nbsp;&nbsp;&nbsp;osoba1.pisz_dane();".fontcolor("black").fontsize(5)+"<br>");
+  document.write("  &nbsp;&nbsp;&nbsp;&nbsp;<u>Opis do przykładu powyżej</U>: ".fontcolor("black").fontsize(5)+"<br>");
+  document.write(" &nbsp;&nbsp;&nbsp;&nbsp; W definicji konstruktora nie zostały zadeklarowane żadne metody i właściwości. Dopiero po użyciu  ".fontcolor("black").fontsize(5)+"<br>");
+  document.write(" &nbsp;&nbsp;&nbsp;&nbsp; właściwości prototype została dodana metoda pisz_dane oraz właściwość zawod. Od tej pory każdy  ".fontcolor("black").fontsize(5)+"<br>");
+  document.write(" &nbsp;&nbsp;&nbsp;&nbsp; nowo tworzony obiekt na podstawie konstruktora klient będzie posiadał tę dodatkową właściwość i ".fontcolor("black").fontsize(5)+"<br>");
+  document.write(" &nbsp;&nbsp;&nbsp;&nbsp;  metodę.".fontcolor("black").fontsize(5)+"<br>");
+  document.write(" &nbsp;&nbsp;&nbsp;&nbsp;<b> Właściwość prototype może być również wykorzystana do dodawania dodatkowych  </b> ".fontcolor("black").fontsize(5)+"<br>");
+  document.write(" &nbsp;&nbsp;&nbsp;&nbsp; <b> metod lub właściwości do istniejących obiektów.</b>".fontcolor("black").fontsize(5)+"<br>");
+ 
+ 
+ 
+ 
+ 
+ </script>
+ </head>
+ <body>
+ <form>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+ </form>
+</body>
+</html>
