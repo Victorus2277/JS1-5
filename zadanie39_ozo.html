@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+		<title> Ożóg 3F</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        
+        <script language="JavaScript">
+     document.write ("<font color=green size=7>MENU</font>"+"<br>"+"<br>"+"<br>"+"<br>");
+     
+     document.write ("<font color=red size=7>1-Czerwony</font>"+"<br>"+"<br>");
+
+     document.write ("<font color=blue size=7>2-Niebieski</font>"+"<br>");
+
+     
+    
+ function fun_ozo() {
+ var x_ozo = prompt("Podaj kolor", "");
+ if(x_ozo == 1 || x_ozo.toLowerCase() == "czerwony") {
+document.write('<h1 style=\"color:red; font-size:40px;">Wczytałeś kolor czerwony</h1><br />'); }
+ else if(x_ozo == 2 || x_ozo.toLowerCase() == "niebieski") {
+document.write('<h6 style=\"color:blue; font-size:40px;">Wczytałeś kolor niebieski</h6><br />');
+}
+}
+</script>
+<input type="button" name="nazwisko_ucznia" value="Oblicz" onclick="fun_ozo()" />
+</body>
+</html>

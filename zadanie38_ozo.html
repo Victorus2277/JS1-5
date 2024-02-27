@@ -1,0 +1,69 @@
+<html>
+  <head>
+  <title> Ożóg 3F</title>
+    <style>
+      body {
+        background-color: silver;
+      }
+    </style>
+  </head>
+  <body>
+    <script language="JavaScript">
+      
+      var liczba_liter_imienia = 6;
+      var liczba_liter_nazwiska = 4;
+      var numer_w_dzienniku = 25;
+
+      
+      var liczba1 = liczba_liter_imienia;
+      var liczba2 = liczba1 + 7;
+      var liczba3 = liczba_liter_nazwiska;
+      var liczba4 = liczba3 + 4;
+
+      
+      document.write('<div style="color:green;font-size:' + (40 + (numer_w_dzienniku % 7)) + 'px;">');
+      document.write('Imię: Wiktor<br>'); 
+      document.write('Nazwisko: Ożóg<br>'); 
+      document.write('Liczba1: ' + liczba1 + '<br>');
+      document.write('Liczba2: ' + liczba2 + '<br>');
+      document.write('Liczba3: ' + liczba3 + '<br>');
+      document.write('Liczba4: ' + liczba4 + '<br>');
+      document.write('</div>');
+
+      
+      var opcja_ozo = prompt('Podaj numer opcji: ');
+
+      
+      if (opcja_ozo == 3) {
+        document.write('<div style="color:blue;font-size:' + (40 + (numer_w_dzienniku % 7)) + 'px;">');
+        document.write('Jesteś w opcji 3 --> teoria <br> && i x=3 y=4 (x<9 && y >2) wynik -->prawda <br> || lub x=3 y=4 (x==8 || y==6) wynik --> fałsz <br> !zaprzecznie x=3 y=4 !(x==y) wynik-->prawda </div><br>');
+        
+      } else if (opcja_ozo == 29) {
+        document.write('<div style="color:red;font-size:' + (40 + (numer_w_dzienniku % 7)) + 'px;">');
+        document.write('Jesteś w opcji 29 --> sprawdzanie liczby</div><br>');
+        
+        var liczba_ozo = prompt('Podaj liczbę: ');
+        
+        if ((liczba_ozo >= liczba3) && (liczba_ozo < liczba4 + 20)) {
+          document.write('Liczba należy do przedziału.');
+        } else {
+          document.write('Liczba nie należy do przedziału.');
+        }
+      } else if (opcja_ozo == 58) {
+        document.write('<div style="color:red;font-size:' + (40 + (numer_w_dzienniku % 7)) + 'px;">');
+        document.write('Jesteś w opcji 58 --> sprawdzanie liczby</div><br>');
+        
+        var liczba2_ozo = prompt('Podaj liczbę: ');
+        
+        if ((liczba2_ozo < liczba1) || (liczba2_ozo >= liczba2 + 50)) {
+          document.write('Liczba należy do przedziału.');
+        } else {
+          document.write('Liczba nie należy do przedziału.');
+        }
+      } else {
+        document.write('<div style="color:red;font-size:' + (40 + (numer_w_dzienniku % 7)) + 'px;">');
+        document.write('Nie ma takiej opcji.</div><br>');
+      }
+    </script>
+  </body>
+</html>
