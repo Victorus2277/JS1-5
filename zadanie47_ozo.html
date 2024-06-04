@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Sprawdzenie trójkąta Ożóg</title>
+</head>
+<body>
+    <div style="color:blue; font-size:50px;">
+    <script>
+        var a_ozo, b_ozo, c_ozo;
+        
+
+        do {
+            a_ozo = parseFloat(prompt("Podaj długość boku a:"));
+        } while (isNaN(a_ozo) || a_ozo <= 0);
+
+        do {
+            b_ozo = parseFloat(prompt("Podaj długość boku b:"));
+        } while (isNaN(b_ozo) || b_ozo <= 0);
+
+        do {
+            c_ozo = parseFloat(prompt("Podaj długość boku c:"));
+        } while (isNaN(c_ozo) || c_ozo <= 0);
+
+        
+        var warunek1 = a_ozo + b_ozo > c_ozo;
+        var warunek2 = a_ozo + c_ozo > b_ozo;
+        var warunek3 = b_ozo + c_ozo > a_ozo;
+
+       
+        if (warunek1 && warunek2 && warunek3) {
+            document.write("Podane długości boków tworzą trójkąt.");
+        } else {
+            document.write("Podane długości boków nie spełniają warunków trójkąta.");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<script>
+    
+    function wypiszLiczbyNieparzyste(liczba1, liczba2) {
+        var mniejsza = Math.min(liczba1, liczba2);
+        var wieksza = Math.max(liczba1, liczba2);
+        var kolor, czcionka;
+
+        
+        if (liczba1 < liczba2) {
+            kolor = "green";
+            czcionka = "16px";
+        } else if (liczba1 > liczba2) {
+            kolor = "blue";
+            czcionka = "8px";
+        } else {
+            confirm("Liczby są równe, brak obliczeń.");
+            return;
+        }
+
+        document.write("<p style='color: " + kolor + "; font-size: " + czcionka + ";'>");
+        document.write("Liczby nieparzyste między " + mniejsza + " a " + wieksza + ":<br>");
+        
+        for (var i = mniejsza + 1; i < wieksza; i++) {
+            if (i % 2 !== 0) {
+                document.write(i + "<br>");
+            }
+        }
+
+        document.write("</p>");
+    }
+
+    
+    var liczba1 = parseInt(prompt("Podaj pierwszą liczbę:"));
+    var liczba2 = parseInt(prompt("Podaj drugą liczbę:"));
+
+    
+    wypiszLiczbyNieparzyste(liczba1, liczba2);
+</script>

@@ -1,0 +1,28 @@
+<script>
+    
+    function isPrime(num) {
+        if (num <= 1) return false;
+        if (num <= 3) return true;
+        
+        if (num % 2 === 0 || num % 3 === 0) return false;
+
+        for (var i = 5; i * i <= num; i += 6) {
+            if (num % i === 0 || num % (i + 2) === 0) return false;
+        }
+
+        return true;
+    }
+
+    
+    var count = 0;
+    for (var i = 0; count < 40; i++) {
+        var num = i * i + i + 41;
+        if (isPrime(num)) {
+            document.write("i=" + i + " w(" + i + ")=" + num + "<br>");
+            count++;
+            if (count % 5 === 0 && count !== 40) {
+                if (!confirm("Aby kontynuować, naciśnij dowolny klawisz")) break;
+            }
+        }
+    }
+</script>

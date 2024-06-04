@@ -1,0 +1,25 @@
+<script>
+    
+    var liczba_liter_nazwiska = 4;  
+    var liczba_liter_imienia = 6;   
+    var a_ozo = (liczba_liter_nazwiska % 4) + 5;
+    var b_ozo = (liczba_liter_imienia % 6) + 20;
+
+    
+    for (var i = 0; i < b_ozo; i++) {
+        if (i === 0 || i === b_ozo - 1) {
+            
+            for (var j = 0; j < a_ozo; j++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        } else {
+            
+            document.write("*");
+            for (var j = 1; j < a_ozo - 1; j++) {
+                document.write("&nbsp;&nbsp;"); 
+            }
+            document.write("*<br>");
+        }
+    }
+</script>

@@ -1,0 +1,42 @@
+<script>
+    
+    var l1_ozo = parseInt(prompt("Podaj liczbę l1:"));
+    var l2_ozo = parseInt(prompt("Podaj liczbę l2:"));
+    var pocz_ozo = parseInt(prompt("Podaj wartość początkową wielkości tekstu (px):"));
+    var tekst_ozo = prompt("Podaj tekst:");
+
+    
+    if (l1_ozo < 20 || l1_ozo > 60) {
+        document.write("Liczba l1 nie należy do przedziału <20, 60>.");
+    } else if (l2_ozo < 20 || l2_ozo > 60) {
+        document.write("Liczba l2 nie należy do przedziału <20, 60>.");
+    } else {
+        
+        var ilosc_powtorzen;
+        if (l1_ozo < l2_ozo) {
+            ilosc_powtorzen = Math.abs(l2_ozo - l1_ozo) + 1;
+        } else {
+            ilosc_powtorzen = Math.abs(l1_ozo - l2_ozo) + 1;
+        }
+
+        
+        if (pocz_ozo > 100) {
+            document.write("Wielkość tekstu początkowego jest większa niż 100px.");
+        } else if (pocz_ozo < 0) {
+            document.write("Wielkość tekstu początkowego jest mniejsza niż 0px.");
+        } else {
+            
+            for (var i = 0; i < ilosc_powtorzen; i++) {
+                if (pocz_ozo < 0 || pocz_ozo > 100) {
+                    break;
+                }
+                document.write("<p style=\"font-size:" + pocz_ozo + "px; color: black;\"><br>" + tekst_ozo + "<br></p>");
+                if (l1_ozo < l2_ozo) {
+                    pocz_ozo += 5;
+                } else {
+                    pocz_ozo -= 5;
+                }
+            }
+        }
+    }
+</script>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+<body>
+<div style="color:blue; font-size:50px;">
+ <script language="JavaScript">
+    var nazwisko = "Ożóg";
+    var imie = "Wiktor";
+    var liczba_liter_nazwiska = nazwisko.length;
+    var ile_razy_wyswietlic = (liczba_liter_nazwiska % 4) + 10; 
+    var wielkosc_liter = (liczba_liter_nazwiska % 3) + 40; 
+
+    for (var i = 0; i < ile_razy_wyswietlic; i++) {
+        if (i % 2 == 0) {
+            document.write("<font size=" + wielkosc_liter + "px>" + nazwisko + "</font><br>");
+        } else {
+            document.write("<font size=" + wielkosc_liter + "px>" + imie + "</font><br>");
+        }
+    }
+ </script>
+</div>
+</body>
+</html>

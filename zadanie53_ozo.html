@@ -1,0 +1,36 @@
+<script>
+    
+    var imie = prompt("Podaj imię:");
+    var nazwisko = prompt("Podaj nazwisko:");
+
+    
+    var liczba_liter_nazwiska = nazwisko.replace(/[^\w]/g, "").length; 
+    var liczba_liter_imienia = imie.replace(/[^\w]/g, "").length; 
+    var a = (liczba_liter_nazwiska % 4) + 5;
+    var b = (liczba_liter_imienia % 6) + 20;
+
+    
+    document.write("<pre>");
+    
+    for (var i = 0; i < a + 2; i++) {
+        document.write("*");
+    }
+    document.write("<br>");
+    
+    for (var i = 0; i < b; i++) {
+        document.write("*");
+        for (var j = 0; j < a; j++) {
+            if (j === 0 || j === a - 1) {
+                document.write("&nbsp;");
+            } else {
+                document.write("*");
+            }
+        }
+        document.write("*<br>");
+    }
+    
+    for (var i = 0; i < a + 2; i++) {
+        document.write("*");
+    }
+    document.write("</pre>");
+</script>

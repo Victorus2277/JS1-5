@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Obliczanie silni</title>
+</head>
+<body>
+    <div style="font-size: 54px; color: blue;">
+	<script>
+        
+        var n_ozo = parseInt(prompt("Podaj liczbę n="), 10);
+
+        
+        var silnia_ozo;
+
+        
+        if (n_ozo === 0) {
+            silnia_ozo = 1;
+        } else {
+            silnia_ozo = 1;
+            for (var i = 1; i <= n_ozo; i++) {
+                silnia_ozo *= i;
+            }
+        }
+
+        
+        document.write("n=" + n_ozo + "<br>");
+        document.write(n_ozo + "!=" + silnia_ozo);
+    </script>
+</body>
+</html>
